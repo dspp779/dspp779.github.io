@@ -27,40 +27,60 @@
     <!-- <script src="static/js/index/main.js"></script> -->
     <!-- <script src="static/js/common.js"></script> -->
     <style>
-        .container {
-          display: flex;
-          height: 100%;
-          align-items: center;
-          justify-content: center;
+        body, .dimmer {
+            background: #FCFCFC url(/static/img/bg.jpg) repeat;
         }
     </style>
 </head>
 
 <body>
-  <!-- <div class="ui middle aligned one column centered grid"> -->
-  <!-- <div class="column"> -->
-  <div class="container">
+  <div class="ui large basic modal">
+  <!-- <div class="container"> -->
     <div class="ui centered link raised card">
       <div class="image">
-        <img src="./static/img/jjc.jpg">
+        <img src="/static/img/jjc.jpg">
       </div>
       <div class="content">
         <a class="header">JJC</a>
         <div class="meta">
-          <span class="name">dspp779</span>
+          <span class="name">Programmar</span>
         </div>
         <div class="description">
-          A programmer living in Taiwan.
+          Design, Photography, Basketball
         </div>
+        <br>
       </div>
       <div class="extra content">
-        <a href="https://github.com/dspp779" target="_blank"><i class="github large icon"></i></a>
-        <a href="https://www.facebook.com/dspp779" target="_blank"><i class="facebook large icon"></i></a>
-        <a href="https://twitter.com/dspp779" target="_blank"><i class="twitter large icon"></i></a>
+        <a href="https://github.com/dspp779" target="_blank">
+          <i class="github large icon" data-content="Visit my github! &#x1F913;"></i>
+        </a>
+        <a href="https://www.flickr.com/photos/dspp779/" target="_blank">
+          <i class="flickr large icon" data-content="I love photography &#x2764;"></i>
+        </a>
+        <a href="https://www.facebook.com/dspp779" target="_blank">
+          <i class="facebook large icon" data-content="Let's what's going on &#x1F644;"></i>
+        </a>
+        <a href="https://twitter.com/dspp779" target="_blank">
+          <i class="twitter large icon" data-content="meme &#x1F60F;"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/dspp779" target="_blank">
+          <i class="linkedin square large icon" data-content="Hello. I'm JJC. &#x1F60E;"></i>
+        </a>
+        <a href="https://www.youtube.com/user/dspp779" target="_blank">
+          <i class="youtube play large icon" data-content="Watch my favorite videos &#x1F4FD;"></i>
+        </a>
       </div>
-    </div>
+    <!-- </div> -->
   </div>
-  <!-- </div> -->
+  </div>
+  <script type="text/javascript">
+    $('.ui.modal').modal({
+        closable: false,
+        inverted: true,
+    });
+    $('.ui.modal').modal('show');
+    $('.extra.content i.icon').popup();
+  </script>
 </body>
 
 </html>
